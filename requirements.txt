@@ -1,0 +1,6 @@
+torch>=2.3
+torch-geometric>=2.6
+rdkit
+biopython
+scipy
+numpy

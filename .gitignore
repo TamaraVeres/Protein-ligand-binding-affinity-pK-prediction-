@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+.metadata_never_index
+
+# Preprocessed sample cache (2.7 GB, distributed separately)
+*.pt
+# ...but the trained weights ARE part of the repo
+!checkpoints/*.pt
+
+# Raw structure files (~33 GB, not distributed)
+*.sdf
+*.mol2
+*.pdb
+# ...except the small example pair used by the smoke test
+!examples/*.sdf
+!examples/*.mol2
+!examples/*.pdb
+
+predictions.csv
+
+# Training logs: only the runs behind the reported results
+logs/*
+!logs/README.md
+!logs/random_run*.csv
+!logs/similarity_run*.csv
+logs_archive/

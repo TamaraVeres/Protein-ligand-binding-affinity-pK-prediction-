@@ -1,0 +1,2 @@
+pdb_id,ligand_path,pocket_path
+example,examples/ligand.sdf,examples/pocket.pdb
