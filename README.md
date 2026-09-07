@@ -15,7 +15,7 @@ pip install -r requirements.txt
 Predict affinity for ligand/pocket pairs:
 
 ```bash
-python predict.py --csv examples/pairs.csv \
+python predict.py --csv pairs.csv \
                   --model checkpoints/random_run2.pt \
                   --output predictions.csv
 ```
@@ -211,9 +211,6 @@ src/
     trainer.py                  train loop, splits, evaluate
 tools/
   consolidate_cache.py          deduplicate and slim the sample cache
-tests/
-  test_smoke.py                 feature, checkpoint and split regression tests
-examples/                       ligand/pocket pair for the smoke test
 checkpoints/
   random_run1.pt                random split, seed 42
   random_run2.pt                random split, seed 0
@@ -248,5 +245,4 @@ Python 3.10+, PyTorch 2.3+, PyTorch Geometric 2.6+, RDKit, BioPython, SciPy, Num
 
 ```bash
 pip install -r requirements.txt
-pytest tests/ -q
 ```
