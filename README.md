@@ -252,3 +252,10 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt   # to run the tests
 pytest tests/ -q
 ```
+
+## Data sources
+
+Affinity values in `data/` derive from PDBbind v2020, scPDB and BindingDB. Each carries its
+own licence and citation requirements, which apply to those files and to models trained on
+them. The MIT licence covers the code only. Check the current terms of each source before
+redistributing.
